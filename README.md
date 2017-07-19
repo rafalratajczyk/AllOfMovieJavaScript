@@ -22,4 +22,10 @@ What's inside?
 
 **OMDb API**
 
+**bootswatch**
+
+**CSS**
+
+**HTML**
+
 Enjoy!
