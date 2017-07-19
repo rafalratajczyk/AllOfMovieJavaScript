@@ -3,7 +3,7 @@ $(document).ready(() => {
         let searchText = $('#searchText').val();
         getMovies(searchText);
         e.preventDefault();
-        })
+        });
 });
 
 function getMovies(searchText) {
@@ -18,10 +18,13 @@ function getMovies(searchText) {
                     <div class="well text-center">
                         <img src="${movie.Poster}">
                         <h5>${movie.Title}</h5>
+                        <a onclick="movieSelected('${movie.imdbID}')" class="btn btn-primary" href="#">Movie Details</a>
                      </div>
                 </div>
                 `;
-        })
+        });
+
+        $('#movies').html(output);
     })
 
 }
